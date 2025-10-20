@@ -1,4 +1,4 @@
-Plano de Implementação do Projeto SmartTour Angola
+Plano de Implementação do Projeto OmaholaTour Angola
 1. Objetivo Geral
 Desenvolver uma aplicação inteligente denominada
 OmaholaTour Angola, baseada em técnicas de Machine Learning, capaz de recomendar destinos turísticos sustentáveis e promover a equidade na distribuição dos fluxos turísticos em Angola.
