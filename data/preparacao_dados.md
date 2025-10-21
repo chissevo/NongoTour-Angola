@@ -14,16 +14,27 @@ Essa preparação assegura que o modelo tenha **informações consistentes, rele
     * **Ministério do Turismo e Ambiente** - Áreas de conservação, fragilidade ecológica.
     * **OpenStreetMap e GeoBoundaries** - Coordenadas e mapas geográficos.
 
-### Pré-processamento inicial
-1. * Conversão dos ficheiros para formato `.csv` e `.json`.  
-2. * Padronização de nomes de colunas e unidades.  
-3. * Integração de datasets com `pandas.merge()`.
+    ### Pré-processamento inicial
+    1. * Conversão dos ficheiros para formato `.csv` e `.json`.  
+    2. * Padronização de nomes de colunas e unidades.  
+    3. * Integração de datasets com `pandas.merge()`.
 
-```python
-    import pandas as pd
+    ```python
+        import pandas as pd
 
-    turismo = pd.read_csv("dados_turismo.csv")
-    ambiente = pd.read_csv("dados_ambiente.csv")
+        turismo = pd.read_csv("dados_turismo.csv")
+        ambiente = pd.read_csv("dados_ambiente.csv")
 
-    dados = pd.merge(turismo, ambiente, on="provincia", how="inner")
-    dados.head()
+        dados = pd.merge(turismo, ambiente, on="provincia", how="inner")
+        dados.head()
+
+### 3. Limpeza de Dados 
+As principais operações de limpeza incluíram:
+
+    **Remoção de valores ausentes (NaN) com imputação pela média ou mediana;
+
+    **Exclusão de duplicados;
+
+    **Tratamento de valores extremos (IQR);
+
+    **Padronização dos tipos de dados.
