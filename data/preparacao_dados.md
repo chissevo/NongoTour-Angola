@@ -31,10 +31,7 @@ Essa preparação assegura que o modelo tenha **informações consistentes, rele
 ### 3. Limpeza de Dados 
 As principais operações de limpeza incluíram:
 
-    **Remoção de valores ausentes (NaN) com imputação pela média ou mediana;
-
-    **Exclusão de duplicados;
-
-    **Tratamento de valores extremos (IQR);
-
-    **Padronização dos tipos de dados.
+    *Remoção de valores ausentes (NaN) com imputação pela média ou mediana;
+    *Exclusão de duplicados;
+    *Tratamento de valores extremos (IQR);
+    *Padronização dos tipos de dados.
