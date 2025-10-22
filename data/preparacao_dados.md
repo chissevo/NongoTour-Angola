@@ -31,7 +31,24 @@ Essa preparação assegura que o modelo tenha **informações consistentes, rele
 ### 3. Limpeza de Dados 
 As principais operações de limpeza incluíram:
 
-    *Remoção de valores ausentes (NaN) com imputação pela média ou mediana;
-    *Exclusão de duplicados;
-    *Tratamento de valores extremos (IQR);
-    *Padronização dos tipos de dados.
+* Remoção de valores ausentes (NaN) com imputação pela média ou mediana;
+* Exclusão de duplicados;
+* Tratamento de valores extremos (IQR);
+* Padronização dos tipos de dados.
+    
+    ```python
+            dados['visitantes_ano'].fillna(dados['visitantes_ano'].median(), inplace=True)
+            dados.drop_duplicates(inplace=True)
+            Q1 = dados['impacto_ecologico'].quantile(0.25)
+            Q3 = dados['impacto_ecologico'].quantile(0.75)
+            IQR = Q3 - Q1
+            dados = dados[~((dados['impacto_ecologico'] < (Q1 - 1.5 * IQR)) | (dados['impacto_ecologico'] > (Q3 + 1.5 * IQR)))]
+
+### 4. Análise Exploratória de Dados (EDA)
+A EDA permitiu compreender o comportamento do turismo por província, sazonalidade e impacto ambiental.
+Foram geradas visualizações para:
+
+* Número de visitantes por província.
+* Correlação entre fluxo turístico e impacto ambiental.
+* Mapa geográfico dos destinos mais visitados.
+
