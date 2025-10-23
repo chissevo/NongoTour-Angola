@@ -1,8 +1,10 @@
-Plano de Implementação do Projeto OmaholaTour Angola
-1. Objetivo Geral
+# Plano de Implementação do Projeto NongoTour Angola
+
+**1. Objetivo Geral**
 Desenvolver uma aplicação inteligente denominada
-OmaholaTour Angola, baseada em técnicas de Machine Learning, capaz de recomendar destinos turísticos sustentáveis e promover a equidade na distribuição dos fluxos turísticos em Angola.
+NongoTour Angola, baseada em técnicas de Machine Learning, capaz de recomendar destinos turísticos sustentáveis e promover a equidade na distribuição dos fluxos turísticos em Angola.
 Etapa	Descrição	Ferramentas / Tecnologias	Duração (estimada)	Responsável
+
 1. Coleta de Dados	Recolha de dados turísticos, ambientais e geográficos (INE, Ministério do Turismo, OpenStreetMap).	Python (Pandas), APIs, CSV	2 dias	Maria José
 2. Limpeza e Preparação de Dados	Tratamento de dados ausentes, normalização, padronização de colunas e integração de datasets.	Pandas, NumPy	2 dias	Alberto Pessela
 3. Análise Exploratória de Dados (EDA)	Exploração visual e estatística dos dados. Criação de gráficos e correlações.	Matplotlib, Seaborn, Plotly	2 dias	Alberto Pessela
@@ -58,7 +60,7 @@ Relatório técnico e científico descrevendo o processo de Machine Learning e i
 Contribuição prática para políticas públicas e divulgação de destinos emergentes.
 9. Repositório no GitHub
 O projeto será versionado e documentado em:
-📁 GitHub Repository: [github.com/<teu-usuario>/SmartTour-Angola](https://github.com/chissevo/OmaholaTour-Angola)
+📁 GitHub Repository: [github.com/<teu-usuario>/SmartTour-Angola](https://github.com/chissevo/NongoTour-Angola)
 O repositório conterá:
 /data → datasets originais e tratados
 /notebooks → análises e modelagem ML
