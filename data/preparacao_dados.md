@@ -47,7 +47,7 @@ As principais operações de limpeza incluíram:
                        (dados['impacto_ecologico'] > (Q3 + 1.5 * IQR)))]
 
 ### 4. Análise Exploratória de Dados (EDA)
-A EDA permitiu compreender o comportamento do turismo por província, sazonalidade e impacto ambiental.
+A EDA permitirá compreender o comportamento do turismo por província, sazonalidade e impacto ambiental.
 Foram geradas visualizações para:
     
 * Número de visitantes por província.
