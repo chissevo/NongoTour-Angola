@@ -1,6 +1,5 @@
 <img src="../main/files/NongoTour Angola.png" width="998" height="472">
 
-(https://www.flaticon.com/free-icon/rocket_407016)
 
 # ***NongoTour Angola*** 
 
