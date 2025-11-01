@@ -8,4 +8,3 @@ O **NongoTour**, é um aplicação web inteligente de recomendação de destinos
 O **NongoTour** vem da junção do ***Ubumdu*** e ***Inglês*** onde ***Noñgo*** *significa Inteligente* e ***Toue*** *significa Viagem*.
 
 **MISSÃO:** *Ser o guia turístico inteligente de Angola, guiando visitantes a descobrirem as maravilhas do país através de uma plataforma web inteligente e personalizada.*
-
