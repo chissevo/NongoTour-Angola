@@ -1,4 +1,4 @@
-<img src="../files/NongoTour Angola.png" width="998" height="472">
+<img src="../main/files/NongoTour Angola.png" width="998" height="472">
 
 <i class="fa-sharp fa-light fa-globe"></i>  
 # ***NongoTour Angola*** 
