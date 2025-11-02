@@ -11,4 +11,6 @@
 
 O **NongoTour** vem da junção do ***Ubumdu*** e ***Inglês*** onde ***Noñgo*** *significa Inteligente* e ***Tour*** *significa Viagem*.
 
-**MISSÃO:** *Ser o guia turístico inteligente de Angola, guiando visitantes a descobrirem as maravilhas do país através de uma plataforma web inteligente e personalizada.*
+<img src="../NongoTour-Angola/files/challenge_5807863.png" alt="rocket_nongotour" width="30" style="vertical-align: middle;"/> **MISSÃO:** *Ser o guia turístico inteligente de Angola, guiando visitantes a descobrirem as maravilhas do país através de uma plataforma web inteligente e personalizada.*
+
+<img src="../NongoTour-Angola/files/search_11523794.png" alt="rocket_nongotour" width="30" style="vertical-align: middle;"/> **VISÃO:** *Ser o motor tecnológico do turismo sustentável em Angola, impulsionando as economias locais ao conectar viajantes conscientes com a riqueza cultural e natural do país.*
