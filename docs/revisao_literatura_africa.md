@@ -1,71 +1,129 @@
-# 📚 Revisão de Literatura: Turismo Sustentável e Sistemas de Recomendação
+# 🌍 Revisão de Literatura: Turismo Sustentável e Sistemas de Recomendação
 
-## 1. Introdução
-
-Esta revisão de literatura serve de fundação para o projeto NongoTour. O nosso objetivo é analisar a intersecção de duas áreas de investigação:
-1.  **Turismo Sustentável em África:** Com foco nos desafios da concentração económica (ODS 8, 11) e na promoção de produtos locais (ODS 12).
-2.  **Sistemas de Recomendação (RS) no Turismo:** Como o Machine Learning é usado para personalizar experiências e influenciar a decisão do utilizador.
-
-A nossa tese é que existe uma lacuna significativa na aplicação de Sistemas de Recomendação (ML) para resolver os desafios específicos do turismo sustentável no contexto africano, uma lacuna que o NongoTour visa preencher.
+> **Projeto:** NongoTour – Plataforma Inteligente para Promoção do Turismo Sustentável em Angola  
+> **Base tecnológica:** Laravel, React, Inertia.js, python
+> **Autores:** Maria Emília Caculo José, Sérgio Chissevo, Joao da Silva Antônio, José Poba, Alberto Carlos De Jesus  Pessela
 
 ---
 
-## 2. O Contexto: Turismo Sustentável e Desenvolvimento em África
-*(Esta secção responde diretamente ao pedido do seu formador sobre "experiências africanas")*
-
-A literatura sobre o turismo em África aponta para um paradoxo: apesar do seu enorme potencial de crescimento, os benefícios económicos são muitas vezes mal distribuídos.
-
-### 2.1. O Problema: Modelos de Turismo "Enclave"
-* A investigação (ex: [Nome do Autor, Ano]) demonstra que muitos modelos de turismo se concentram em "enclaves" (resorts ou capitais), como Luanda.
-* Isto leva a uma "fuga" de receitas (o dinheiro não fica na comunidade local) e sobrecarrega a infraestrutura urbana (ligação ao ODS 11).
-
-### 2.2. A Solução: Turismo de Base Comunitária (CBT)
-* Como resposta, muitos países africanos (ex: Quénia, África do Sul, Tanzânia) têm investido em **Turismo de Base Comunitária (CBT)**.
-* Estudos de caso (ex: [Autor, Ano]) mostram que o CBT é altamente eficaz na promoção da cultura local (ODS 12) e na criação de emprego direto (ODS 8) em zonas rurais.
-* **A Experiência Africana:** A literatura mostra que o maior desafio do CBT é o *marketing* e o *acesso ao mercado*. Os operadores locais não conseguem competir com as grandes agências de viagens, ficando "invisíveis" para o turista internacional.
+## 🧭 Sumário
+- [1. Introdução](#-1-introdução)
+- [2. Turismo Sustentável: Conceitos e Princípios](#-2-turismo-sustentável-conceitos-e-princípios)
+- [3. Turismo Sustentável e Desenvolvimento em África](#-3-turismo-sustentável-e-desenvolvimento-em-áfrica)
+- [4. Contexto Angolano: Dados e Tendências](#-4-contexto-angolano-dados-e-tendências)
+- [5. Sistemas de Recomendação no Turismo](#-5-sistemas-de-recomendação-no-turismo)
+- [6. Integração entre Sustentabilidade e Tecnologia](#-6-integração-entre-sustentabilidade-e-tecnologia)
+- [7. Referências](#-7-referências)
 
 ---
 
-## 3. A Ferramenta: Sistemas de Recomendação (RS) no Turismo
+## 📘 1. Introdução
 
-Paralelamente, a investigação em ciência da computação tem aperfeiçoado ferramentas para lidar com a "sobrecarga de informação" no turismo digital.
+O turismo é um dos setores mais dinâmicos da economia global, responsável por cerca de **10% do PIB mundial** e uma em cada dez oportunidades de emprego (OMT, 2023).  
+Com a crescente digitalização e o avanço da inteligência artificial, o setor passa a incorporar ferramentas que otimizam experiências, planeamento e gestão de destinos.
 
-### 3.1. Tipos de RS (Filtragem Colaborativa vs. Conteúdo)
-* Sistemas de recomendação são algoritmos de ML desenhados para prever as preferências do utilizador.
-* A literatura (ex: [Autor, Ano]) descreve os dois métodos principais que planeamos usar:
-    * **Filtragem Baseada em Conteúdo:** Recomenda destinos com características (tags) semelhantes aos que o utilizador gostou no passado (ex: "praia", "cultura").
-    * **Filtragem Colaborativa:** Recomenda destinos que "utilizadores como você" também gostaram.
+Em Angola e em outros países africanos, o turismo representa uma oportunidade estratégica para **diversificação económica**, **geração de emprego** e **valorização cultural**. O projeto **NongoTour** insere-se nesse contexto, propondo uma **aplicação web baseada em Machine Learning** para **recomendação de destinos turísticos** em Angola.  
 
-### 3.2. O Impacto dos RS na "Cauda Longa" (Long Tail)
-* O impacto mais significativo dos RS (ex: [Autor, Ano]) é a sua capacidade de promover a diversidade e a "cauda longa" (long-tail).
-* Em vez de recomendar apenas os "hits" (Luanda, Benguela), um RS bem afinado pode ligar um utilizador de nicho a um destino emergente de nicho (ex: "observação de aves no Moxico") que ele nunca descobriria sozinho.
-
----
-
-## 4. A Lacuna: Onde a Tecnologia Encontra o Desenvolvimento
-
-Esta revisão revela uma lacuna clara:
-* **A literatura de desenvolvimento (Secção 2)** identifica um problema (invisibilidade do turismo rural africano), mas propõe soluções não-tecnológicas (ex: políticas governamentais).
-* **A literatura de computação (Secção 3)** desenvolve ferramentas poderosas (RS), mas aplica-as maioritariamente a problemas comerciais (ex: "vender mais quartos de hotel no Booking.com") sem um foco explícito nos ODS.
-
-O **NongoTour** posiciona-se precisamente nesta intersecção. É a aplicação de uma solução técnica comprovada (RS para a cauda longa) a um problema de desenvolvimento africano bem documentado (a invisibilidade do turismo de base comunitária).
-
-## 5. Conclusão e Implicações para o NongoTour
-
-A literatura confirma que:
-1.  O problema da concentração turística é real e prejudica os ODS.
-2.  O turismo de base comunitária (nas províncias emergentes) é a solução, mas sofre de falta de visibilidade.
-3.  Os Sistemas de Recomendação (ML) são a ferramenta ideal para resolver problemas de visibilidade e promover a diversidade.
-
-Portanto, o NongoTour está fundamentado na literatura como uma intervenção necessária e tecnologicamente viável.
+A plataforma tem como objetivos principais:
+- Direcionar turistas com base nas suas preferências individuais;  
+- Promover a **descentralização do turismo**, dando visibilidade a destinos menos explorados;  
+- Impulsionar um **desenvolvimento económico equitativo** entre as províncias;  
+- Alinhar-se com os **Objetivos de Desenvolvimento Sustentável (ODS 8, 11 e 12)** — Crescimento Económico, Cidades Sustentáveis e Consumo Responsável.
 
 ---
 
-## 6. Referências Bibliográficas
+## 🌱 2. Turismo Sustentável: Conceitos e Princípios
 
-*(Adicione aqui as suas fontes em formato académico, ex: APA ou IEEE)*
+De acordo com a **Organização Mundial do Turismo (OMT, 2023)**, o turismo sustentável visa satisfazer as necessidades atuais dos turistas e das comunidades anfitriãs, protegendo simultaneamente os recursos naturais, culturais e sociais para as gerações futuras.
 
-* [Autor, A. (Ano). *Título do Artigo*. Nome da Revista, Volume(Edição), pp. X-Y.]
-* [...]
+Os **três pilares fundamentais** do turismo sustentável são:
+- **Económico:** geração de emprego, inovação e receitas locais;  
+- **Social:** inclusão das comunidades e respeito pela cultura local;  
+- **Ambiental:** preservação dos ecossistemas e uso responsável dos recursos.
 
-* [Musavengane, R., Woyo, E., & Chawarura, W. (2023). Crisis management and resilience of small to medium tourism enterprises in a distressed destination. Tourism Review International: an international journal, 27(1), 1-17. https://doi.org/10.3727/154427223x16717265382741]
+Pesquisadores como **Bramwell e Lane (2011)** reforçam que o turismo sustentável depende de uma **governança participativa**, onde governos, setor privado e comunidades trabalham de forma colaborativa.  
+Em contextos em desenvolvimento, como o africano, este modelo é essencial para equilibrar **crescimento económico e conservação ambiental**.
+
+---
+
+## 🌍 3. Turismo Sustentável e Desenvolvimento em África
+
+O continente africano tem registado um **crescimento notável na chegada de turistas internacionais**, impulsionado por melhorias na conectividade aérea, estabilidade política e valorização de patrimônios naturais e culturais (OMT, 2023).  
+
+Entretanto, persistem desafios estruturais, como:
+- Infraestruturas turísticas e digitais limitadas;  
+- Fraca integração entre turismo e economia local;  
+- Necessidade de políticas de sustentabilidade ambiental mais eficazes.
+
+Países como **Ruanda, Cabo Verde e Quénia** têm desenvolvido estratégias de **turismo sustentável e inteligente**, baseadas em dados, inovação digital e inclusão comunitária.  
+Essas experiências evidenciam que o turismo pode ser **um vetor de desenvolvimento económico equilibrado** quando aliado à tecnologia e à sustentabilidade.
+
+---
+
+## 🇦🇴 4. Contexto Angolano: Dados e Tendências
+
+Segundo o *Anuário Estatístico do Turismo 2022–2023*, publicado pelo **Ministério do Turismo de Angola** e o **Instituto Nacional de Estatística (INE)**, o país vive uma fase de recuperação e crescimento:
+
+- **263.553 turistas internacionais** no biénio 2022–2023 (+136 mil face ao biénio anterior);  
+- **Europa** como principal origem (50,1%), com **Portugal (32,7%)** e **Brasil (5,7%)**;  
+- **186 mil empregos** gerados pelo setor em 2023;  
+- **7 mil estabelecimentos turísticos** ativos, concentrados em **Luanda (47,5%)**.
+
+Esses indicadores mostram que o turismo é um **pilar estratégico da economia nacional**, mas ainda **concentrado em poucas regiões**.  
+Nesse cenário, soluções como o **NongoTour** podem contribuir para **distribuir o fluxo turístico de forma mais equilibrada**, promovendo novas rotas e experiências sustentáveis.
+
+> **Fonte:**  
+> ANGOLA. Ministério do Turismo. Gabinete de Estudos, Planeamento e Estatística. *Anuário Estatístico do Turismo 2022–2023.* Luanda: Instituto Nacional de Estatística, 2024.
+
+---
+
+## 🤖 5. Sistemas de Recomendação no Turismo
+
+Os **sistemas de recomendação** utilizam algoritmos de *machine learning* para analisar o comportamento dos utilizadores e sugerir destinos, atividades ou serviços personalizados.  
+Segundo **Ricci, Rokach e Shapira (2015)**, as principais abordagens são:
+
+- **Filtragem colaborativa:** baseia-se nas preferências de utilizadores com perfis semelhantes;  
+- **Filtragem baseada em conteúdo:** identifica semelhanças entre destinos e interesses;  
+- **Modelos híbridos:** combinam ambas as técnicas para maior precisão.
+
+No contexto do turismo sustentável, essas ferramentas são essenciais para:
+- Incentivar **viagens responsáveis e distribuídas**;  
+- Promover **destinos alternativos**;  
+- Reduzir o impacto ambiental e social do turismo massivo.
+
+A aplicação **NongoTour** integra essas técnicas para oferecer **recomendações inteligentes** de destinos em Angola, utilizando dados estatísticos, perfis de utilizadores e padrões de sazonalidade.
+
+---
+
+## 💡 6. Integração entre Sustentabilidade e Tecnologia
+
+O cruzamento entre **sustentabilidade e inteligência computacional** é central para o turismo do futuro.  
+O **NongoTour** representa essa integração ao combinar **dados oficiais**, **aprendizado de máquina** e **design de experiência do utilizador** para:
+
+- Melhorar a experiência turística com recomendações personalizadas;  
+- Apoiar políticas públicas de descentralização turística;  
+- Promover o **consumo responsável e o crescimento inclusivo**.
+
+O projeto está alinhado com os seguintes **Objetivos de Desenvolvimento Sustentável (ODS)**:
+- 🟢 **ODS 8:** Trabalho Decente e Crescimento Económico;  
+- 🟢 **ODS 11:** Cidades e Comunidades Sustentáveis;  
+- 🟢 **ODS 12:** Consumo e Produção Responsáveis.
+
+Assim, o **NongoTour** atua não apenas como uma aplicação tecnológica, mas como uma **ferramenta de transformação socioeconómica e ambiental**, apoiando o desenvolvimento sustentável do turismo em Angola.
+
+---
+
+## 📚 7. Referências
+
+- ANGOLA. Ministério do Turismo. Gabinete de Estudos, Planeamento e Estatística. *Anuário Estatístico do Turismo 2022–2023.* Luanda: Instituto Nacional de Estatística, 2024.  
+- BRAMWELL, B.; LANE, B. (2011). *Critical research on the governance of tourism and sustainability.* Journal of Sustainable Tourism, 19(4–5), 411–421.  
+- ORGANIZAÇÃO MUNDIAL DO TURISMO (OMT). *Tourism for Sustainable Development Goals – Journey to 2030.* Madrid: UNWTO, 2023.  
+- RICCI, F.; ROKACH, L.; SHAPIRA, B. (2015). *Recommender Systems Handbook.* Springer, New York.  
+- GRETZEL, U.; FESENMAIER, D. R. (2010). *Persuasive design in recommender systems for tourism.* In: *Information and Communication Technologies in Tourism 2010.* Springer, Vienna.  
+- UNECA (2022). *Africa Sustainable Tourism Framework.* United Nations Economic Commission for Africa, Addis Ababa.
+
+---
+
+🌐 **Resumo Final:**  
+O turismo sustentável em África, e especialmente em Angola, apresenta desafios estruturais, mas um enorme potencial para **crescimento económico equilibrado** e **preservação ambiental**.  
+O **NongoTour** combina **inteligência artificial, dados estatísticos e princípios de sustentabilidade** para transformar a forma como turistas exploram Angola — promovendo um turismo **mais inteligente, inclusivo e sustentável**.
