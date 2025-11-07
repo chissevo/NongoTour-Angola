@@ -13,21 +13,21 @@ Abaixo está a organização dos diretórios e ficheiros principais do projeto *
 
 ```
 /NongoTour/
-        |
-        |-- 📂 data/
-                |-- turismo_angola_completo.csv
-        |       |-- mock_user_preferences.csv
-        |
-        |-- 📂 docs/
-        |       |-- revisao_literatura_africa.md
-        |       |-- plano_implementacao.md
-        |
-        |-- 📂 notebooks/
-        |       |-- 01_Analise_Exploratoria_EDA.ipynb
-        |       |-- 02_Baseline_Model.ipynb
-        |
-        |-- README.md
-        |-- requirements.txt
+    |
+    |-- 📂 data/
+        |-- turismo_angola_completo.csv
+    |   |-- mock_user_preferences.csv
+    |
+    |-- 📂 docs/
+    |   |-- revisao_literatura_africa.md
+    |   |-- plano_implementacao.md
+    |
+    |-- 📂 notebooks/
+    |   |-- 01_Analise_Exploratoria_EDA.ipynb
+    |   |-- 02_Baseline_Model.ipynb
+    |
+    |-- README.md
+    |-- requirements.txt
 ```
 
 ## 1. O Problema: A Concentração do Turismo
