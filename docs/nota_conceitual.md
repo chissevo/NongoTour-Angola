@@ -33,7 +33,7 @@ Diante desse contexto, surge a necessidade de usar tecnologias inteligentes
 para analisar, prever e recomendar destinos turísticos que promovam
 sustentabilidade, inclusão social e equilíbrio regional.
 
-Diante deste problema formulamos o problema de pesquisa da seguinte forma:
+Diante dessa abordagem, foi levantado o seguinte problema:
 
 **Como a aplicação de técnicas de Machine Learning pode contribuir para promover o turismo sustentável e equitativo em Angola, através da análise e recomendação inteligente de destinos turísticos?**
 
@@ -46,7 +46,7 @@ Desenvolver uma aplicação inteligente denominada NongoTour Angola, baseada em 
 * Recolher dados turísticos de Angola, incluindo informações sobre destinos, avaliações, acessibilidade, impacto ambiental e perfil dos turistas. 
 * Analisar os dados recolhidos utilizando métodos estatísticos e exploratórios (EDA) para identificar padrões e fatores determinantes nas escolhas turísticas.
 * Aplicar algoritmos de Machine Learning, como sistemas de recomendação (Recommender Systems), agrupamento (Clustering) e análise de sentimento (Sentiment Analysis), para gerar previsões e recomendações inteligentes.
-* Desenvolver um protótipo funcional da aplicação SmartTour Angola (versão web ou mobile) integrando os modelos de Machine Learning ao
+* Desenvolver um protótipo funcional da aplicação NongoTour Angola (versão web ou mobile) integrando os modelos de Machine Learning ao
 sistema de recomendação de destinos.
 * Garantir que o sistema de recomendação promova a inclusão e sustentabilidade, estabelecendo uma meta de que pelo menos 25% das recomendações geradas sejam para destinos emergentes (fora dos grandes centros) ou geridos por comunidades locais.
 * Propor diretrizes estratégicas para o uso de tecnologias inteligentes na formulação de políticas públicas de turismo sustentável em Angola.
