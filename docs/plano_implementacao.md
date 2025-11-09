@@ -1,113 +1,137 @@
-# Plano de Implementação: NongoTour
+# 🧭 Plano de Implementação — NongoTour Angola
 
-Este documento detalha o plano de implementação faseado para o projeto NongoTour, desde a estruturação inicial até à entrega final.
-
-## Fase 0: Estruturação e Ambiente (1ª Semana)
-
-O objetivo é "preparar o terreno". O foco é criar a estrutura para a equipa trabalhar de forma organizada antes de iniciar a modelagem.
-
-### 🎯 Objetivo Principal
-Montar o ambiente de desenvolvimento, criar os artefactos iniciais do projeto e integrar o feedback da nota conceitual.
-
-### 📋 Tarefas Concretas
-1.  **Configuração do GitHub:**
-    * Criação do repositório central.
-    * Redação do `README.md` principal (baseado na Nota Conceitual).
-    * Criação do ficheiro `requirements.txt` inicial (com `pandas`, `notebook`, `scikit-learn`, `matplotlib`).
-    * Definição da estrutura de pastas (ex: `/data`, `/notebooks`, `/src`).
-2.  **Criação dos Dados Mock:**
-    * Desenvolver e carregar os datasets fictícios (ex: `destinos_mock.csv`, `avaliacoes_mock.csv`) na pasta `/data`, conforme recomendação.
-3.  **Revisão e Baseline:**
-    * **Pesquisa:** Expandir a secção de Revisão de Literatura (ou História) com casos de estudo africanos em turismo sustentável.
-    * **ML:** Criar o primeiro notebook (`notebooks/01_EDA.ipynb`) que carrega e explora os **dados mock**.
-4.  **Atualização da Documentação:**
-    * Atualizar a `nota_conceitual.md` para refletir os KPIs de ODS e as métricas de ML detalhadas (RMSE, F1-Score, etc.).
+## 1. Introdução
+O presente plano de implementação descreve as etapas técnicas, metodológicas e operacionais para o desenvolvimento da aplicação **NongoTour Angola**, uma plataforma inteligente de recomendação de destinos turísticos sustentáveis baseada em Machine Learning.
+O objetivo é promover a descentralização do turismo e impulsionar o desenvolvimento económico equitativo em Angola.
 
 ---
 
-## Fase 1: Coleta de Dados e Baseline (Semanas 2-3)
+## 2. Estrutura do Projeto
+O projeto está organizado em quatro módulos principais:
 
-O trabalho divide-se: uma equipa foca-se nos dados reais enquanto a outra cria um primeiro modelo funcional (com dados mock) para servir de termo de comparação.
-
-### 🎯 Objetivo Principal
-Obter os primeiros dados reais e estabelecer um "Modelo Baseline" para futuras comparações.
-
-### 📋 Tarefas Concretas
-1.  **Coleta de Dados Reais:**
-    * Iniciar a recolha de dados das fontes identificadas (INFORTUR, INE, etc.).
-    * Iniciar o processo de limpeza e pré-processamento (Data Cleaning) dos dados reais.
-2.  **Modelo Baseline (com Dados Mock):**
-    * Criar o notebook `notebooks/02_Baseline_Model.ipynb`.
-    * Implementar o modelo mais simples possível (ex: "Recomendar os 10 destinos com *rating* médio mais alto").
-    * Implementar as funções de avaliação (Precisão, Recall, RMSE) que servirão para todos os modelos.
-3.  **Engenharia de Recursos (Inicial):**
-    * Definir e calcular (mesmo que de forma simulada) o "índice de sustentabilidade" para os destinos.
+- **Módulo de Dados:** Recolha, tratamento e armazenamento dos dados turísticos.
+- **Módulo de Análise e Machine Learning:** Preparação, modelagem, validação e avaliação dos dados.
+- **Módulo Web:** Interface interativa (frontend/backend) para recomendação e visualização de destinos.
+- **Módulo de Monitorização:** Avaliação do impacto do sistema e indicadores ligados aos ODS 8, 11 e 12.
 
 ---
 
-## Fase 2: Modelagem e Experimentação (Semanas 4-6)
+## 3. Etapas de Implementação
 
-Esta é a fase central de Machine Learning. O objetivo é desenvolver e testar modelos que sejam comprovadamente melhores que o *baseline*.
+### Fase 0 — Configuração, Dados Mock e Baseline (Semana 1)
+O objetivo é preparar o ambiente de desenvolvimento e criar um "baseline" para permitir o início imediato do trabalho de ML, conforme as recomendações.
 
-### 🎯 Objetivo Principal
-Desenvolver, treinar e validar os modelos de Machine Learning propostos.
-
-### 📋 Tarefas Concretas
-1.  **Desenvolvimento dos Modelos:**
-    * Implementar os algoritmos de recomendação (ex: Filtragem Colaborativa, Baseada em Conteúdo).
-    * Implementar modelos auxiliares (Análise de Sentimento, Agrupamento de turistas).
-2.  **Treino e Validação:**
-    * Treinar os modelos (idealmente com dados reais, se já disponíveis).
-    * Aplicar rigorosamente os métodos de validação (Cross-Validation, split temporal).
-    * Gerar e salvar as métricas de desempenho de cada modelo.
-3.  **Seleção e Ajuste (Tuning):**
-    * Comparar as métricas de todos os modelos contra o *baseline*.
-    * Selecionar o(s) modelo(s) com melhor desempenho para a prototipagem.
-    * Afinar os hiperparâmetros do modelo vencedor.
+- Configuração do repositório GitHub (`README.md`, `requirements.txt`).
+- Criação de **datasets mock** (fictícios) `destinos_mock.csv` e `avaliacoes_mock.csv` para permitir o desenvolvimento paralelo.
+- **Resultado:** Notebook `00_Modelo_Baseline.ipynb` (implementa um modelo simples, ex: "recomendar os 10 mais populares", para servir de base de comparação).
 
 ---
 
-## Fase 3: Prototipagem e Integração (Semanas 7-8)
+### Fase 1 — Planeamento e Preparação de Dados
+- Identificação das fontes (INFORTUR, INE, TripAdvisor, etc.)
+- Criação do esquema de dados (CSV ou Base SQL)
+- Tratamento, limpeza e uniformização dos dados **reais**.
+- Documentação no ficheiro `preparacao_dados.md`
 
-Um modelo num notebook não é um produto. Esta fase foca-se em tornar o modelo acessível através de uma aplicação.
-
-### 🎯 Objetivo Principal
-Criar um protótipo funcional (web ou mobile) que consome o modelo de ML treinado.
-
-### 📋 Tarefas Concretas
-1.  **Backend (API):**
-    * Salvar o modelo treinado (ex: num ficheiro `.pkl` ou `.joblib`).
-    * Criar uma API simples (ex: usando Flask ou FastAPI) que recebe um pedido (ex: `user_ID`) e devolve uma lista de recomendações do modelo.
-2.  **Frontend (UI):**
-    * Desenvolver a interface de utilizador (protótipo) onde o utilizador pode inserir preferências ou ver recomendações.
-3.  **Testes de Integração:**
-    * Garantir que o fluxo completo (Frontend -> API -> Modelo -> Recomendação) funciona corretamente.
+**Resultado esperado:** Dataset final `turismo_angola_completo.csv` pronto para análise.
 
 ---
 
-## Fase 4: Avaliação e Entrega (Semanas 9-10)
+### Fase 2 — Análise Exploratória (EDA)
+- Estudo de correlações e padrões entre variáveis (destinos, avaliações, acessibilidade) - *inicialmente com dados mock, depois com dados reais*.
+- Visualização de distribuições por província
+- Identificação de variáveis-chave para modelagem
 
-Foco em testar o impacto (ODS) e preparar a entrega final do projeto.
-
-### 🎯 Objetivo Principal
-Avaliar o impacto real do protótipo face aos objetivos de sustentabilidade (ODS) e preparar a apresentação final.
-
-### 📋 Tarefas Concretas
-1.  **Avaliação de Impacto (ODS):**
-    * Executar simulações no protótipo para medir os KPIs de ODS definidos na Fase 0 (ex: "Qual a % de destinos emergentes recomendados?").
-2.  **Conclusão e Apresentação:**
-    * Redigir as "diretrizes estratégicas" para políticas públicas (um dos objetivos do projeto).
-    * Preparar a apresentação final e o "pitch" do NongoTour.
-    * Garantir que o repositório GitHub está limpo, documentado e que o código é executável.
+**Ferramentas:** Python (Pandas, Matplotlib, Seaborn, Plotly)
+**Saída:** Notebook `01_Analise_Exploratoria_EDA.ipynb`
 
 ---
 
-## 🤝 Gestão da Equipa e Divisão de Tarefas
+### Fase 3 — Engenharia de Recursos
+- Criação de variáveis derivadas:
+  - Índice de Sustentabilidade do Destino
+  - Índice de Inclusão Comunitária
+  - Escore de Acessibilidade
+- Normalização e codificação de dados para uso em modelos ML.
 
-Com 6 membros, sugere-se uma divisão em frentes de trabalho:
+**Saída:** `dataset_pronto_modelagem.csv`
 
-* **Frente de Dados e Pesquisa (2 membros):** Foco na Fase 0 (Revisão Lit.), Fase 1 (Coleta e Limpeza de Dados) e Fase 2 (Eng. de Recursos).
-* **Frente de ML/Modelagem (2 membros):** Foco na Fase 1 (Baseline), Fase 2 (Modelagem/Validação) e Fase 3 (API).
-* **Frente de Produto/Frontend (2 membros):** Foco na Fase 3 (Frontend/UI) e Fase 4 (Testes de Impacto ODS, Apresentação).
+---
 
-Recomenda-se uma sincronização semanal (stand-up) de 15 minutos para partilhar progressos e bloqueios.
+### Fase 4 — Modelagem e Validação
+- **Sistemas de Recomendação:** Filtragem colaborativa e híbrida
+- **Clustering:** Segmentação de perfis de turistas
+- **Análise de Sentimentos:** Classificação de avaliações textuais
+- **Validação Cruzada (k-fold)** e **Split Temporal**
+
+**Métricas:**
+- RMSE / MAE → Precisão das previsões
+- F1 / Recall / Precision → Análise de sentimento
+- Silhouette Score → Clustering
+
+---
+
+### Fase 5 — Desenvolvimento do Protótipo
+- **Backend:** API em **Laravel** integrando modelos ML via Python
+- **Frontend:** Interface em **React + Inertia.js**
+- **Containerização (Pre-Cloud):** A aplicação (Laravel + Python API) será "dockerizada" para garantir paridade total entre os ambientes de desenvolvimento, testes (Staging) e produção na nuvem.
+- **Funcionalidades principais:**
+  - Recomendação personalizada
+  - Filtros por tipo de destino
+  - Mapa interativo dos destinos emergentes
+  - Dashboard de impacto (ODS 8, 11, 12)
+
+---
+
+### Fase 6 — Testes, Avaliação e Staging
+- Testes unitários e de integração
+- Testes de usabilidade (UX/UI)
+- **Implantação em Staging (Pré-Produção):** A aplicação será implementada num ambiente de nuvem de testes (*Staging*) para validar o desempenho, a segurança e a integração dos serviços em condições reais.
+- Avaliação da eficácia das recomendações com dados simulados
+
+---
+
+### Fase 7 — Lançamento (Produção) e Monitorização Contínua
+- **Implantação em Produção:** Lançamento da versão estável da aplicação no ambiente de nuvem principal, acessível aos utilizadores finais.
+- **Monitorização de Desempenho e Métricas de Impacto:**
+  - Implementação de métricas de impacto:
+    - Percentagem de recomendações para destinos emergentes
+    - Redução da concentração turística em Luanda
+  - Recolha de feedback dos utilizadores e comunidades locais
+  - Ajuste periódico dos modelos ML com novos dados
+
+---
+
+## 4. Cronograma de Implementação (Exemplo)
+| Fase | Descrição | Duração | Período |
+|------|------------|----------|----------|
+| 0 | Configuração e Baseline | 1 semana | Out 2025 |
+| 1 | Preparação de Dados Reais | 3 semanas | Out–Nov 2025 |
+| 2 | EDA e Engenharia de Recursos | 4 semanas | Nov–Dez 2025 |
+| 3 | Modelagem e Validação | 5 semanas | Jan–Fev 2026 |
+| 4 | Desenvolvimento do Protótipo | 6 semanas | Fev–Mar 2026 |
+| 5 | Testes e Avaliação (Staging) | 3 semanas | Abr 2026 |
+| 6 | Lançamento e Monitorização | Contínuo | Mai–Jun 2026 |
+
+---
+
+## 5. Recursos Necessários
+- **Humanos:** Cientistas de dados, programadores web, analistas de turismo e designers UX/UI.
+- **Tecnológicos:** Python, Jupyter, Laravel, React, PostgreSQL, Docker.
+- **Ambiente de Nuvem:** Definição da plataforma de cloud (ex: **AWS, Google Cloud, Azure, ou DigitalOcean**) para os ambientes de *Staging* (Testes) e *Produção*.
+  - **Serviços-chave:** (ex: Base de Dados Gerida como **RDS/Cloud SQL**, serviço de container como **ECS/AppRunner**, e *storage* como **S3/Cloud Storage** para guardar os modelos ML).
+- **Dados:** Fontes oficiais (INFORTUR, INE), APIs abertas e dados recolhidos por inquérito.
+
+---
+
+## 6. Indicadores de Sucesso
+| Objetivo | Indicador | Meta |
+|-----------|------------|------|
+| Inclusão de destinos emergentes | Percentagem de recomendações fora dos grandes centros | ≥ 25% |
+| Sustentabilidade | Índice médio de sustentabilidade dos destinos recomendados | ≥ 70% |
+| Satisfação dos utilizadores | Taxa de aceitação das recomendações | ≥ 80% |
+
+---
+
+## 7. Conclusão
+O presente plano define uma rota clara para o desenvolvimento, implantação e validação do **NongoTour Angola**, garantindo que o sistema recomende destinos turísticos de forma **inteligente, sustentável e inclusiva**, alinhando-se com os **Objetivos de Desenvolvimento Sustentável (ODS) 8, 11 e 12**.
