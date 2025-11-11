@@ -1,0 +1,9 @@
+Provincia,popularidade,custo_medio,impacto_ambiental,feat_cultura,feat_praia,feat_aventura,feat_natureza
+Luanda,137000,300,0.2,1.0,0.8,0.1,0.2
+Benguela,97000,220,0.4,0.5,1.0,0.5,0.3
+Huíla,73000,100,0.7,0.7,0.0,0.8,1.0
+Namibe,61000,150,0.9,0.2,1.0,0.9,0.9
+Malanje,49000,90,0.8,0.9,0.0,0.9,1.0
+Cabinda,45000,180,0.9,0.6,0.7,0.3,0.8
+Huambo,52000,70,0.6,0.8,0.0,0.6,0.7
+Cuando Cubango,29000,160,1.0,0.3,0.0,1.0,1.0

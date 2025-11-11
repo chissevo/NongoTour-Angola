@@ -1,0 +1,16 @@
+# Ignorar o Ambiente Virtual do Python
+/.venv/
+/venv/
+
+# Ignorar caches do Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignorar ficheiros do Jupyter Notebook
+.ipynb_checkpoints/
+
+# Ignorar caches e logs
+.cache/
+*.log
