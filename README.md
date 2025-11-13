@@ -15,17 +15,34 @@ Abaixo está a organização dos diretórios e ficheiros principais do projeto *
 /NongoTour/
     |
     |-- 📂 data/
-        |-- turismo_angola_completo.csv
-    |   |-- mock_user_preferences.csv
+        |-- provincia_features_MVP.csv
+    |   |-- provincia_features_v2.csv
+    |   |-- mock_reviews.csv
+    |   |-- user_features_MVP.csv
+    |   |-- user_interactions_MVP
     |
     |-- 📂 docs/
+    |   |-- ml-models.md
     |   |-- revisao_literatura_africa.md
     |   |-- plano_implementacao.md
-    |
+    |   |-- nota_conceitual
+    |-- 📂 models/
+    |   |--cb_provincias_features.pkl
+    |   |--cb_user_feature_names.pkl
+    |   |--cf_scaler.pkl
+    |   |--interaction_matrix.pkl
+    |   |--svd_model.pkl   (Modelo de treino)
     |-- 📂 notebooks/
     |   |-- 01_Analise_Exploratoria_EDA.ipynb
     |   |-- 02_Baseline_Model.ipynb
-    |
+    |   |-- 03_Content_Based_Model.ipynb
+    |   |-- 03a_Sentiment_Analysis.ipynb
+    |   |-- 04_Collaborative_Filtering.ipynb
+    |   |-- 05_Hybrid_Model.ipynb
+    |-- 📂 src/
+    |   |-- app.py (Nossa API)
+    |-- .dockerignore (Informações que devem ser ignoradas no nosso docker container)
+    |-- Dockerfile (Regras para a criação do nosso docker container)
     |-- README.md
     |-- requirements.txt
 ```

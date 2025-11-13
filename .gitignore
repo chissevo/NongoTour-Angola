@@ -1,6 +1,7 @@
 # Ignorar o Ambiente Virtual do Python
 /.venv/
 /venv/
+# Ignorar ficheiros de modelos treinados
 /models/
 
 # Ignorar caches do Python

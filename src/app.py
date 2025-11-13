@@ -7,19 +7,19 @@ import os
 
 # --- CONFIGURAÇÕES GLOBAIS ---
 K = 3 # Número de recomendações
-W_CF = 0.6
-W_CB = 0.4
+W_CF = 0.1  
+W_CB = 0.9
 SVD_MODEL = None # Inicializa para o health check
 MODELS_SUBDIR = 'models'
 # --- 1. Carregar Componentes (SVD e CB) ---
 try:
     # 1. DEFINIÇÃO DO CAMINHO ABSOLUTO (CORREÇÃO CRÍTICA)
     # BASE_DIR será /NongoTour/src/
-    """BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+    BASE_DIR = os.path.dirname(os.path.abspath(__file__))
     # MODELS_DIR será /NongoTour/models/
     MODELS_DIR = os.path.join(BASE_DIR, '..', 'models') 
 
-    # 2. CARREGAMENTO DOS MODELOS USANDO O CAMINHO ABSOLUTO
+    """# 2. CARREGAMENTO DOS MODELOS USANDO O CAMINHO ABSOLUTO
     SVD_MODEL = joblib.load(os.path.join(MODELS_DIR, 'svd_model.pkl'))
     CF_SCALER = joblib.load(os.path.join(MODELS_DIR, 'cf_scaler.pkl'))
     
@@ -73,9 +73,13 @@ def get_recommendations(user_profile_data, user_id):
     # user_profile_data deve ser um dict com as chaves: 
     # 'pref_sustentavel', 'pref_cultura', 'pref_praia', 'pref_aventura', 'pref_natureza'
     user_df = pd.DataFrame([user_profile_data], index=[user_id], columns=USER_FEATURES_COLS)
+    user_df = user_df.fillna(0) # Garantir que não há NaNs
     
     # 2.2. Calcular CB Scores (100% dos scores)
-    cb_similarity = cosine_similarity(user_df.values, PROVINCIA_FEATURES.values)
+    cb_similarity = cosine_similarity(
+        user_df.values, 
+        PROVINCIA_FEATURES.values
+        )
     df_scores_cb = pd.DataFrame(
         cb_similarity, index=[user_id], columns=ALL_PROVINCES
     )
@@ -134,7 +138,7 @@ def health_check():
 
     return jsonify({
         "status": status,
-        "message": "API de Recomendação de Angola Ativa!",
+        "message": "API de Recomendação de NongoTour Angola Está Activa!",
         "endpoint_principal": "POST /recommend"
         }), 200
 

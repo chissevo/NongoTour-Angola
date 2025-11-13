@@ -1,4 +1,4 @@
-# .dockerignore (Coloque na pasta /NongoTour)
+# .dockerignore /NongoTour
 
 # Ficheiros e pastas de desenvolvimento que NÃO são necessários no servidor de produção
 data/
