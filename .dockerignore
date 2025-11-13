@@ -1,0 +1,20 @@
+# .dockerignore (Coloque na pasta /NongoTour)
+
+# Ficheiros e pastas de desenvolvimento que NÃO são necessários no servidor de produção
+data/
+docs/
+notebooks/
+.git/
+.gitignore
+
+# Ficheiros/Imagens desnecessárias para a API
+NongoTour Angola.png 
+
+# Excluir a pasta "src" temporariamente para garantir que só copiamos o que queremos na API
+# Mas vamos copiá-la explicitamente no Dockerfile.
+# Se o seu código python estiver apenas em src/app.py, pode deixar assim
+
+
+# Ficheiros temporários e logs
+*.log
+*.tmp
