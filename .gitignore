@@ -1,4 +1,6 @@
 # Ignorar o Ambiente Virtual do Python
+/.venv/
+/venv/
 /models/
 
 # Ignorar caches do Python
